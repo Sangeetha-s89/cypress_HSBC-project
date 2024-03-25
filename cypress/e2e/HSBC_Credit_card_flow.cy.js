@@ -45,6 +45,7 @@ describe('HSBC credit card flow',()=>{
         creditcard.closePopUp()
         cy.wait(5000)
         creditcard.locators.popupscreen().should('not.be.visible')
+        cy.wait(10000)
     })
 
 })

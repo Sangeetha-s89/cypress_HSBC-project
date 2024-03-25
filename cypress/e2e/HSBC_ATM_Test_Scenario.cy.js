@@ -45,5 +45,6 @@ describe('HSBC ATM Test Scenarios',()=>{
         cy.scrollTo('bottom')
         atmpage.privacyStatementClick()
         atmpage.locators.privacyheader().should('include.text','Privacy Statement')
+        cy.wait(10000)
      })
 })

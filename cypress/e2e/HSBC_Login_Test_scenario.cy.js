@@ -50,14 +50,14 @@ describe('HSBC login test scenario',()=>{
         loginpage.tooltipClick()
      })
 
-     it('Validatate the header on popup',()=>{ 
+     it('Validate the header on popup',()=>{ 
         cy.visit('/security/')
         loginpage.tooltipClick()
         loginpage.locators.popupheader().should('have.text','Username')
         
      })
 
-     it('Validatote the presence of close option and click on it',()=>{ 
+     it('Validate the presence of close option and click on it',()=>{ 
         cy.visit('/security/')
         loginpage.tooltipClick()
         loginpage.locators.closepopup().should('be.visible')
